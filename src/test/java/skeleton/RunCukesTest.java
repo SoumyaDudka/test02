@@ -1,10 +1,16 @@
-package skeleton;
+package case_runner;
+
+import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"json:target/cucumber.json"})
-public class RunCukesTest {
+@CucumberOptions(features="CS_Feature",
+glue = "caseStudy_TestMe",tags = {"@Sanity"},
+plugin = {"html:target/cucumber-htmlreport.html","json:target/cucumber.json"})
+
+
+public class runner_case {
+
 }
