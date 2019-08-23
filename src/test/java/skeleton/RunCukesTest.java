@@ -1,4 +1,4 @@
-package case_runner;
+package skeleton;
 
 import org.junit.runner.RunWith;
 
